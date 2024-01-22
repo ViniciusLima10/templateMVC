@@ -1,4 +1,4 @@
-const homeModel = require('../models/HomeModel.js');
+const HomeModel = require('../models/HomeModel.js');
 
 exports.paginaInicial = (req, res) => {
   res.render('index', {
@@ -7,6 +7,8 @@ exports.paginaInicial = (req, res) => {
   });
   console.log(req.session.usario)
 };
+
+// HomeModel.create({titulo: "ola", descricao: "dasd"})
 
 exports.trataPost = (req, res) => {
   res.send('Ei, sou sua nova rota de POST.');
